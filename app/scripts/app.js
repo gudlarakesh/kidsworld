@@ -63,6 +63,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+      $locationProvider.html5Mode(true);
       $locationProvider.hashPrefix('');
   })
   .config(['cloudinaryProvider', function (cloudinaryProvider) {
